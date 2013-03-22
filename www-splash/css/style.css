@@ -1,0 +1,88 @@
+/* CORE */
+body {
+	background: #E9E9E9;
+}
+
+.wrapper {
+	background: url("../images/bg-wrapper.gif") repeat-x 0 0;
+	width: 100%;
+	padding-top: 86px;
+}
+
+.container {
+	background: #FFF;
+	width: 1048px;
+	box-shadow: rgba(0,0,0,0.3) 0 -1px 1px;
+	-moz-box-shadow: rgba(0,0,0,0.3) 0 -1px 1px;
+	-webkit-box-shadow: rgba(0,0,0,0.3) 0 -1px 1px;
+}
+
+.header {
+}
+
+	header .content {
+		padding-top: 70px;
+		width: 480px;
+		margin: 0 auto;
+	}
+
+	.header img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.header h2 {
+		margin: 0 0 10px;
+		font-size: 27px;
+		text-align: center;
+		color: #179E75;
+	}
+
+	.header p {
+		font-size: 18px;
+		line-height: 1.5;
+		color: #000;
+	}
+
+.subscribe {
+	background: #FFF;
+	width: 520px;
+	margin: 0 auto;
+	padding: 19px;
+	border: 1px solid #CACACA;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	box-shadow: rgba(0,0,0,0.1) 0 0 4px;
+	-moz-box-shadow: rgba(0,0,0,0.1) 0 0 4px;
+	-webkit-box-shadow: rgba(0,0,0,0.1) 0 0 4px;
+}
+
+	.subscribe h3 {
+		margin: 0 0 10px;
+		font-size: 20px;
+		line-height: 1;
+	}
+
+	.subscribe form {
+		margin-bottom: 0;
+	}
+
+	.subscribe input.input-large {
+		width: 360px;
+		padding: 11px 9px;
+		font-size: 17.5px;
+	}
+
+	.subscribe button.btn {
+		float: right;
+		font-weight: bold;
+	}
+
+	.subscribe p.status {
+		display: none;
+	}
+
+	.subscribe .success {
+		display: none;
+	}
