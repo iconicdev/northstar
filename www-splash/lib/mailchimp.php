@@ -1,8 +1,8 @@
 <?php
 
 	//base variables
-	$api_key = "5daa95527bd1521bf1ca847452b96808-us4";
-	$list_id = "";/* INSERT LIST ID */
+	$api_key = "d861580414f98581afad700ac685b121-us5";
+	$list_id = "016b89bb83";/* INSERT LIST ID */
 	$double_optin = false;
 	$send_welcome = false;
 	$email_type = "html";
@@ -36,8 +36,16 @@
 	$data = json_decode($result);
 
 	if ($data->error){
-		$response['code'] = 400;
-		$response['error'] = $data->error;
+
+		//check if error is because user has already signed-up
+		$pos = strpos($data->error, 'already subscribed');
+		if($pos !== false) {
+			$response['code'] = 300;
+			$response['error'] = 'You have already signed-up.';
+		} else {
+			$response['code'] = 400;
+			$response['error'] = $data->error;
+		}
 	} else {
 		$response['code'] = 200;
 	}
